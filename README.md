@@ -10,10 +10,10 @@ mvn clean package
 ```
 ### To run the program as producer
 ```
-java -jar kafka-producer-consumer-1.0-SNAPSHOT.jar producer broker:port
+java -jar kafka-producer-consumer-1.0-SNAPSHOT.jar producer
 ```
 ### To run program as consumer
 ```
-java -jar kafka-producer-consumer-1.0-SNAPSHOT.jar consumer broker:port
+java -jar kafka-producer-consumer-1.0-SNAPSHOT.jar consumer
 ```
 
