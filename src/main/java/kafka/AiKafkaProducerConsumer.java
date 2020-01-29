@@ -19,7 +19,7 @@ import java.util.Collections;
 import java.util.Properties;
 import java.util.Random;
 
-public class AivenKafkaProducerConsumer {
+public class AKafkaProducerConsumer {
 
     public static void main(String[] args) {
         String type = "";
@@ -32,14 +32,14 @@ public class AivenKafkaProducerConsumer {
         }
 
         if (type.equals("consumer")) {
-		AivenConsumer();
+		AConsumer();
 	}
 	else {
-		AivenProducer();
+		AProducer();
 	}
     }
 
-    public static void AivenConsumer() {
+    public static void AConsumer() {
 
         String groupId = "my-group", brokers = "localhost:9092", topic = "test";
         Properties props = new Properties();
@@ -82,7 +82,7 @@ public class AivenKafkaProducerConsumer {
             System.out.println("DONE");
         }
    
-   public static void AivenProducer() {
+   public static void AProducer() {
 
         String groupId = "my-group", brokers = "localhost:9092", topic = "test";
         Properties props = new Properties();
@@ -105,14 +105,14 @@ public class AivenKafkaProducerConsumer {
         // So we can generate random sentences
         Random random = new Random();
         String[] sentences = new String[] {
-            "This is the first message to Aiven Consumers",
-            "This is the 2nd message to Aiven Consumers",
-            "This is the 3rd  message to Aiven Consumers",
-            "This is the 4th  message to Aiven Consumers",
-            "This is the 5th message to Aiven Consumers",
-            "This is the 6th  message to Aiven Consumers",
-            "This is the 7th message to Aiven Consumers",
-            "This is the last message to Aiven Consumers",
+            "This is the first message to A Consumers",
+            "This is the 2nd message to A Consumers",
+            "This is the 3rd  message to A Consumers",
+            "This is the 4th  message to A Consumers",
+            "This is the 5th message to A Consumers",
+            "This is the 6th  message to A Consumers",
+            "This is the 7th message to A Consumers",
+            "This is the last message to A Consumers",
          };
          for (int i = 0; i < 1000; i++) {
              // Pick a sentence at random
